@@ -14,14 +14,6 @@ import static java.time.Duration.ofSeconds;
 import static java.time.format.DateTimeFormatter.ofPattern;
 
 public class TestCardPlus {
-    LocalDate today = LocalDate.now();
-    LocalDate newDate = today.plusDays(3);
-    DateTimeFormatter formatter = ofPattern("dd.MM.yyyy");
-    String formatDateNew = newDate.format(formatter);
-    LocalDate newWeek = today.plusDays(7);
-    String formatWeek = newWeek.format(formatter);
-    int dayPlusSeven = newDate.getDayOfMonth();
-    String str1 = Integer.toString(dayPlusSeven);
 
     @BeforeEach
     void setUp() {
